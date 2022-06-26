@@ -1,0 +1,231 @@
+.hero {
+    padding-right: 28px;
+    padding-left: 96px;
+    padding-bottom: 51px;
+    display: flex;
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 760px;
+        padding-right: 89px;
+        padding-top: 50px;
+    }
+
+    &__heading {
+        font-family: 'Rasa';
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 67px;
+        color: #282828;
+        margin-bottom: 16px;
+        max-width: 687px;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-size: 24px;
+        line-height: 45px;
+        margin-bottom: 32px;
+        max-width: 541px;
+    }
+
+    &__right {
+        flex-grow: 1;
+        color: #fff;
+        padding-top: 24px;
+        padding-right: 30px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+
+
+        &__price {
+            font-family: 'Rasa';
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__heading {
+            font-family: 'Rasa';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 29px 24px;
+            border-radius: 4px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .hr {
+            width: 112px;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 61px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            left: 255px;
+        }
+    }
+}
+
+.card {
+    width: 100%;
+
+
+    ol {
+        display: flex;
+        justify-content: end;
+        gap: 29px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__heading {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 186.9%;
+        color: #282828;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 45px;
+
+        &__item {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 0.01%, rgba(210, 210, 210, 0.51) 100%);
+            max-height: 325px;
+            border-radius: 8px;
+            max-width: 210px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 24px 29px;
+
+        }
+
+        &__heading {
+            font-family: 'Rasa';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 186.9%;
+            text-align: center;
+            color: #282828;
+        }
+
+        &__price {
+            font-family: 'Rasa';
+            font-size: 24px;
+            line-height: 100%;
+            color: #282828;
+            margin-bottom: 9px;
+        }
+    }
+
+    .buy-btn {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #282828;
+        border: 1px solid #282828;
+        padding: 12px 34px;
+        border-radius: 8px;
+        outline: #000 solid 1px;
+        transition: all 0.6s ease;
+    }
+
+    .buy-btn:hover {
+        color: invert($color: #282828);
+        background-color: #000;
+        outline: #282828 solid 1px;
+    }
+}
+
+.green {
+    color: #90FF04;
+    border: 1px solid #90FF04;
+    border-radius: 8px;
+    padding: 12px 34px;
+}
+
+.slider-list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    text-decoration: none;
+    font-size: 100px;
+
+    &__item {
+        background-color: grey;
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}
+
+.slider-list__item:first-child {
+    background-color: #90FF04;
+}
+
+table {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 13px 61px;
+    tr {
+        display: flex;
+        gap: 34px;
+    }
+
+    .td {
+        flex-grow: 1;
+    }
+
+    td {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 186.9%;
+        align-items: center;
+    }
+ 
+    .td2 {
+
+        width: 78px;
+        transform: rotate(90deg); 
+        top: 61px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        left: 255px;
+
+    }
+}

@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 28px 18px 105px;
+
+    &__right {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+
+        select {
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 117px;
+
+    }
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 83px;
+
+    &__item {
+
+        font-family: 'Raleway';
+        font-size: 20px;
+    }
+}
